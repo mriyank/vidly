@@ -5,7 +5,6 @@ import ListGroup from "./common/listGroup";
 import Pagination from "./common/pagination";
 import { paginate } from "../utils/paginate";
 import { getGenres } from "../services/fakeGenreService";
-// import MoviesTable from "./moviesTable";
 
 class Movies extends Component {
   state = {
@@ -21,7 +20,6 @@ class Movies extends Component {
   }
 
   handleDelete = (movie) => {
-    //console.log(movie);
     const movies = this.state.movies.filter((m) => m._id !== movie._id);
     this.setState({ movies });
   };
