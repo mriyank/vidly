@@ -1,8 +1,18 @@
-# Getting Started with Create React App
+## Vidly application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is based on the react course made by [Mosh Hamedani](https://codewithmosh.com/p/mastering-react)
 
-## Available Scripts
+### Content of this course
+
+* Creating reusable react component
+* Learning Lifecycle hooks
+* Paginating, filtering, sorting
+* Routing
+* Forms and their validation
+* Calling backends services - Axios used for this project
+* Authentification & Authorization
+* Deployment
+
 
 In the project directory, you can run:
 
