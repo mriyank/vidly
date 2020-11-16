@@ -11,7 +11,7 @@ const NavBar = () => {
           to="/movies"
           style={{ color: "black" }}
           activeStyle={{
-            color: "#A19E9E",
+            color: "#A19E9E"
           }}
         >
           Movies
@@ -22,7 +22,7 @@ const NavBar = () => {
           to="/customers"
           style={{ color: "black" }}
           activeStyle={{
-            color: "#A19E9E",
+            color: "#A19E9E"
           }}
         >
           Customers
@@ -33,7 +33,7 @@ const NavBar = () => {
           to="/rentals"
           style={{ color: "black" }}
           activeStyle={{
-            color: "#A19E9E",
+            color: "#A19E9E"
           }}
         >
           Rentals
@@ -44,7 +44,7 @@ const NavBar = () => {
           to="/login"
           style={{ color: "black" }}
           activeStyle={{
-            color: "#A19E9E",
+            color: "#A19E9E"
           }}
         >
           Login
@@ -55,7 +55,7 @@ const NavBar = () => {
           to="/register"
           style={{ color: "black" }}
           activeStyle={{
-            color: "#A19E9E",
+            color: "#A19E9E"
           }}
         >
           {" "}

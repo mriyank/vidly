@@ -1,20 +1,33 @@
-import React, { Component } from 'react';
-import {Route} from 'react-router-dom';
+import React, { Component } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import NavBar from "./components/common/NavBar";
+import Movies from "./components/movies";
+import Customers from "./components/customers";
+import Rentals from "./components/rentals";
+import Register from "./components/register";
+import NotFound from "./components/notFound";
+import LoginForm from "./components/loginForm";
+import MovieForm from "./components/movieForm";
 import "./App.css";
-import Movies from './components/movies.jsx';
-import Customers from './components/customers.jsx';
-import Rentals from './components/rentals.jsx';
-import NotFound from './components/notFound.jsx';
 
-function App() {
-  return (
-    <main className="container">
-      <Route path="/movies" component={Movies}></Route>
-      <Route path="/customers" component={Customers}></Route>
-      <Route path="/rentals" component={Rentals}></Route>
-      <Route path="/not-found" component={NotFound}></Route>
-    </main>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <NavBar />
+        <Switch className="navBar">
+          <Route path="/login" component={LoginForm} />
+          <Route path="/movies/:id" component={MovieForm} />
+          <Route path="/movies" component={Movies} />
+          <Redirect exact from="/" to="/movies" />
+          <Route path="/customers" component={Customers} />
+          <Route path="/rentals" component={Rentals} />
+          <Route path="/register" component={Register} />
+          <Redirect to="/not-found" component={NotFound} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
